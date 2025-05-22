@@ -58,10 +58,17 @@ int main() {
     printf("\nCAVALO:\n\n");
 
     while (cavalo--){
-        for(int i = 0; i < 2; i++){
-            printf("Cima\n");
-    }
-        printf("Direita\n");
+        for(int i = 0; i < 3; i++){
+            if (i == 2){
+                printf("Direita\n");
+                break;
+            }
+
+            if ( i < 2){
+                printf("Cima\n");
+                continue;
+            }
+        }
     }
     
     
